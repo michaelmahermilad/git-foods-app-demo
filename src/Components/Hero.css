@@ -1,0 +1,397 @@
+.yoyo {
+  animation: yoyo 6s infinite ease-in-out;
+  z-index: 8000;
+  height: 80vh;
+}
+.Container {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: #f5e6ce;
+  
+  padding-inline: 8rem;
+}
+.images {
+  position: absolute;
+  top: 0;
+
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.imagescont {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.leave4 {
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  top: 5px;
+  left: 6px;
+}
+.leave5 {
+  position: absolute;
+  bottom: 60px;
+  right: 6px;
+  transition: all 0.4s ease-in-out;
+}
+.leave6 {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  transition: all 0.4s ease-in-out;
+}
+.leave8 {
+  position: absolute;
+  bottom: 99px;
+  left: 6px;
+  transition: all 0.4s ease-in-out;
+}
+.Container::after {
+  position: absolute;
+  bottom: 0rem;
+  left: 0;
+  content: "";
+  width: 100vw;
+  height: 8rem;
+  background-image: url("./Images/Slider-bottom-ca.png");
+  background-size: cover;
+}
+.ContainerLeft {
+}
+.ContainerRight > img[id="0"] {
+  padding-top: 5rem;
+  background-repeat: no-repeat;
+  background-image: url("./Images/orangeback.png");
+}
+.ContainerRight > img[id="1"] {
+  padding-top: 8rem;
+  background-repeat: no-repeat;
+  background-image: url("./Images/green.png");
+}
+.TextTop {
+  font-size: 80px;
+  text-align: left;
+  line-height: 6rem;
+  margin-top: 0rem;
+  padding-right: 1rem;
+  max-width:80%;
+}
+.fromtop {
+  animation: fromtop 2s 1 ease;
+}
+.fromdown {
+  animation: fromdown 3s ease-in-out;
+}
+.TextBottom {
+  margin-bottom: 5rem;
+  font-size: 40px;
+  text-align: left;
+}
+@media (max-width: 680px) {
+ 
+}
+@keyframes fromtop {
+  0% {
+    transform: rotateX(3deg);
+    margin-bottom: -5rem;
+  }
+
+  100% {
+    transform: scale(1.02);
+    opacity: 0.9;
+    margin-bottom: 5rem;
+  }
+}
+@keyframes yoyo {
+  0% {
+    margin-bottom: 40rem;
+  }
+  30% {
+    margin-bottom: 8rem;
+  }
+  50% {
+    margin-bottom: 18rem;
+  }
+  70% {
+    margin-bottom: 8rem;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media (max-width: 1200px) {
+    .yoyo {
+        animation: yoyo 6s infinite ease-in-out;
+        z-index: 8000;
+        height: 80vh;
+      }
+      .Container {
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        background-color: #f5e6ce;
+        padding-inline: 2rem;
+      }
+      .images {
+        position: absolute;
+        top: 0;
+      
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+      .imagescont {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .leave4 {
+        position: absolute;
+        transition: all 0.4s ease-in-out;
+        top: -80px;
+        left: -120px;
+        
+      }
+      .leave5 {
+        position: absolute;
+        bottom: 60px;
+        right: -61px;
+        transition: all 0.4s ease-in-out;
+      }
+      .leave6 {
+        position: absolute;
+        top: 5px;
+        right: -61px;
+        transition: all 0.4s ease-in-out;
+      }
+      .leave8 {
+        position: absolute;
+        bottom: 99px;
+        left: -67px;
+        transition: all 0.4s ease-in-out;
+      }
+      .Container::after {
+        position: absolute;
+        bottom: 0rem;
+        left: 0;
+        content: "";
+        width: 100vw;
+        height: 8rem;
+        background-image: url("./Images/Slider-bottom-ca.png");
+        background-size: cover;
+      }
+     
+      .ContainerRight {
+        max-width: 40vw;
+      }
+      .ContainerRight>img {
+      transform: scale(.8);
+      }
+      .ContainerRight > img[id="0"] {
+        padding-top: 5rem;
+        background-repeat: no-repeat;
+        background-image: url("./Images/orangeback.png");
+      }
+      .ContainerRight > img[id="1"] {
+        padding-top: 8rem;
+        background-repeat: no-repeat;
+        background-image: url("./Images/green.png");
+      }
+      .TextTop {
+        font-size: 70px;
+        text-align: left;
+        line-height: 6rem;
+        margin-top: -2rem;
+        padding-right: 2rem;
+        max-width: 87%;
+      }
+      .fromtop {
+        animation: fromtop 2s 1 ease;
+      }
+      .fromdown {
+        animation: fromdown 3s ease-in-out;
+      }
+      .TextBottom {
+        margin-bottom: 5rem;
+        font-size: 40px;
+        text-align: left;
+      }
+      @media (max-width: 680px) {
+       
+      }
+      @keyframes fromtop {
+        0% {
+          transform: rotateX(3deg);
+          margin-bottom: -5rem;
+        }
+      
+        100% {
+          transform: scale(1.02);
+          opacity: 0.9;
+          margin-bottom: 5rem;
+        }
+      }
+      @keyframes yoyo {
+        0% {
+          margin-bottom: 40rem;
+        }
+        30% {
+          margin-bottom: 8rem;
+        }
+        50% {
+          margin-bottom: 18rem;
+        }
+        70% {
+          margin-bottom: 8rem;
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+}
+@media (max-width: 800px) {
+    .yoyo {
+        animation: yoyo 6s infinite ease-in-out;
+        z-index: 8000;
+        height: 80vh;
+      }
+      .Container {
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        background-color: #f5e6ce;
+        padding-inline: 1rem;
+      }
+      .images {
+        position: absolute;
+        top: 0;
+      
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+      .imagescont {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .leave4 {
+        position: absolute;
+        transition: all 0.4s ease-in-out;
+        top: -80px;
+        left: -120px;
+        
+      }
+      .leave5 {
+        position: absolute;
+        bottom: 60px;
+        right: -61px;
+        transition: all 0.4s ease-in-out;
+      }
+      .leave6 {
+        position: absolute;
+        top: 5px;
+        right: -61px;
+        transition: all 0.4s ease-in-out;
+      }
+      .leave8 {
+        position: absolute;
+        bottom: 99px;
+        left: -67px;
+        transition: all 0.4s ease-in-out;
+      }
+      .Container::after {
+        position: absolute;
+        bottom: 0rem;
+        left: 0;
+        content: "";
+        width: 100vw;
+        height: 8rem;
+        background-image: url("./Images/Slider-bottom-ca.png");
+        background-size: cover;
+      }
+     
+      .ContainerRight {
+        max-width: 40vw;
+        display: flex;
+        justify-content: flex-start;
+      }
+      .ContainerRight>img {
+        display: block;
+      transform: scale(.9);
+     justify-self: left;
+      }
+      .ContainerRight > img[id="0"] {
+        padding-top: 5rem;
+        background-repeat: no-repeat;
+        background-image: url("./Images/orangeback.png");
+      }
+      .ContainerRight > img[id="1"] {
+        padding-top: 8rem;
+        background-repeat: no-repeat;
+        background-image: url("./Images/green.png");
+      }
+      .TextTop {
+        font-size: 41px;
+        text-align: left;
+        line-height: 2rem;
+        margin-top: 0rem;
+        padding-right: 0rem;
+        max-width: 87%;
+      }
+      .fromtop {
+        animation: fromtop 2s 1 ease;
+      }
+      .fromdown {
+        animation: fromdown 3s ease-in-out;
+      }
+      .TextBottom {
+        margin-bottom: 5rem;
+        font-size: 22px;
+        text-align: left;
+      }
+      
+      @keyframes fromtop {
+        0% {
+          transform: rotateX(3deg);
+          margin-bottom: -5rem;
+        }
+      
+        100% {
+          transform: scale(1.02);
+          opacity: 0.9;
+          margin-bottom: 5rem;
+        }
+      }
+      @keyframes yoyo {
+        0% {
+          margin-bottom: 40rem;
+        }
+        30% {
+          margin-bottom: 8rem;
+        }
+        50% {
+          margin-bottom: 18rem;
+        }
+        70% {
+          margin-bottom: 8rem;
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+}

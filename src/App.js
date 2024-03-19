@@ -1,23 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Heroswipper from './Components/Heroswipper';
+import Navbar from "./Components/Navbar/index.jsx"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+<Heroswipper/>
     </div>
   );
 }
