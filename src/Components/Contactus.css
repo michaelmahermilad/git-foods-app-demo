@@ -1,0 +1,101 @@
+.MainCont07 {
+    max-width: 100vw;
+    width: 100vw;
+   
+  }
+  .secondCont07 {
+    display: flex;
+    flex-direction: row;
+     justify-content: space-between;
+    max-width: 100vw;
+ 
+    width: 100%;
+  }
+  .interCont07{
+   
+flex:20%;     
+ margin-left: 2rem;
+  }
+  .interCont207 {
+    flex:60%;
+     margin-right: 2rem;
+ 
+    
+    
+  }
+  .mycontactinfo{
+    margin-top: 2rem;
+  }
+
+.icn567{
+    color: silver;
+    font-size: 1.1rem; margin-right: 20px;
+}
+.interCont07 span{
+    font-family: "El Messiri", sans-serif;
+
+ text-decoration: none;
+ color:black;
+ font-size: 1rem;
+line-height: 2.6rem;
+}
+.interCont07 a{
+    font-family: "El Messiri", sans-serif;
+cursor: pointer;
+ 
+ color:black;
+ font-size: .9rem;
+line-height: 2.6rem;
+}
+.interCont07 p{
+    width: fit-content;
+    padding: 0px 7px .5rem 7px;
+     text-transform: uppercase;
+ border-radius: 9px ;
+    text-decoration: none;
+    color:silver;
+     font-weight: bold;
+ 
+    font-size: 1.5rem;
+   line-height: 2rem;
+   margin-bottom: 1rem;
+   }
+  
+
+  @media (max-width: 700px) {
+    .MainCont07 {
+      max-width: 100vw;
+      width: 100vw;
+      padding: 2rem 2vw;
+    }
+    .secondCont07 {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  @media (max-width:700px){
+    .interCont07{
+ width: 100%;
+ padding : .3rem;
+      }
+
+   
+        .interCont207 {
+         width: 96%;
+         margin: auto;
+           margin-top: 3rem;
+        }
+        .mycontactinfo{
+          margin-top: 2rem;
+        }
+        
+      
+      
+
+
+
+
+}

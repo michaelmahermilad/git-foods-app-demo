@@ -1,0 +1,107 @@
+.Aboutka{
+position: relative;
+width:100vw;
+min-height: 750px;
+overflow: hidden;
+}
+.Aboutka video{
+    position: absolute;  
+    width:100vw;
+    
+    right: 0;
+    top:0
+}
+.AboutDiv{
+   position: absolute;
+   width:500px;
+   height: fit-content;
+  
+   font-size: 25px;
+   top:23vw;
+    right:10vw;
+    transform: translateY(-50%);
+   color: rgb(25, 64, 36);
+   text-shadow: .3px 3px 10px rgba(204, 184, 184, 0.574);
+   box-shadow: .5px .5px 10px rgba(0, 0, 0, 0.607);
+   text-align: justify;
+   padding-inline: 30px;
+   backdrop-filter: blur(7px);
+   background-color: #ceabab3b;
+   border-radius: 30px;
+}
+.sub{
+  top:25vw;
+  background-color: #7190a276;
+  color: rgba(255, 255, 255, 0.91);
+  width:600px;
+}
+.AboutDiv .email{
+   width:90%;
+ 
+ 
+  font-size: 25px;
+  
+   
+   
+  color: rgb(0, 0, 0);
+  text-shadow: .3px 3px 10px rgba(204, 184, 184, 0.574);
+  box-shadow: .5px .5px 10px rgba(0, 0, 0, 0.607);
+  text-align: justify;
+  padding-inline: 30px;
+  backdrop-filter: blur(7px);
+  background-color: #ffffffbd;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  outline: none;
+  padding-bottom: .5rem;
+  border: none;
+}
+.AboutDiv .submit{
+  width:8rem;
+
+
+ font-size: 25px;
+ float: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+ color: rgb(255, 255, 255);
+ text-shadow: .3px 3px 10px rgba(204, 184, 184, 0.574);
+ box-shadow: .5px .5px 10px rgba(0, 0, 0, 0.607);
+ text-align: justify;
+padding-bottom: .5rem;
+ backdrop-filter: blur(7px);
+ background-color: #40b767bd;
+ border-radius: 10px;
+ margin-bottom: 20px;
+ outline: none;
+ border: none;
+}
+@media screen and (max-width:900px){
+    .Aboutka video{
+        position: relative;  
+        width:100vw;
+        
+        right: 0;
+        top:0
+    }
+    .AboutDiv{
+        all: unset;
+        display: block;
+         width:100%;
+         padding: 2vw;
+         text-align: left;
+      }   
+      .AboutDiv h3{
+        font-size: 24px;
+    font-family: 'Architects Daughter', sans-serif;
+    color: #76a713;
+    margin-bottom: 7px 
+      }  
+      .AboutDiv p{
+        font-size: 18px;
+         color: #000000;
+        margin-bottom: 7px 
+      }  
+}

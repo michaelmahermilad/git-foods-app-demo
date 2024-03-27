@@ -1,0 +1,22 @@
+ 
+
+
+
+.swiper1 {
+  text-align: center;
+  font-size: 64px;
+ 
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img{
+  display: block;
+  margin: auto;
+  width:8rem
+}
+ 
+@media (max-width:800px){
+ 
+}

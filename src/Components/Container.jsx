@@ -4,8 +4,7 @@ import s5 from "./Images/slider-layer5.png"
 import s4 from "./Images/slider-layer4.png"
 import s6 from "./Images/slider-layer6.png"
 import s8 from "./Images/slider-layer8.png"
-import { getMouseEventOptions } from '@testing-library/user-event/dist/utils'
-function Container({image,id, T1}) {
+ function Container({image,id, T1}) {
     const [x,setx]=useState(0);
     useEffect(()=>{
         const l=document.getElementsByClassName("l")

@@ -4,15 +4,14 @@
   height: 80vh;
 }
 .Container {
-  height: 90vh;
+  height: 87vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   position: relative;
   background-color: #f5e6ce;
-  
-  padding-inline: 8rem;
+  padding-inline: 7.5rem;
 }
 .images {
   position: absolute;
@@ -61,11 +60,14 @@
   background-image: url("./Images/Slider-bottom-ca.png");
   background-size: cover;
 }
-.ContainerLeft {
-}
+ .ContainerRight{
+  z-index: 99999;
+ }
 .ContainerRight > img[id="0"] {
   padding-top: 5rem;
   background-repeat: no-repeat;
+ 
+  z-index: 10000;
   background-image: url("./Images/orangeback.png");
 }
 .ContainerRight > img[id="1"] {
@@ -78,7 +80,7 @@
   text-align: left;
   line-height: 6rem;
   margin-top: 0rem;
-  padding-right: 1rem;
+ 
   max-width:80%;
 }
 .fromtop {
@@ -91,9 +93,6 @@
   margin-bottom: 5rem;
   font-size: 40px;
   text-align: left;
-}
-@media (max-width: 680px) {
- 
 }
 @keyframes fromtop {
   0% {
